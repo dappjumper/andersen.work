@@ -11,6 +11,7 @@
     "tailwindcss": "^1.6.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0"
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "serialize-javascript": ">=3.1.0"
   }
 }
