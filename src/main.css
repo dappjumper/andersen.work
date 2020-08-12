@@ -1,0 +1,28 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+h1 {
+  font-size:2rem;
+}
+
+h2 {
+  font-size:1.5rem;
+}
+
+h1, h2, h3, h4, p {
+  margin-bottom:1rem;
+}
+
+body {
+  transition: background .5s;
+}
+
+body {
+  color:#333333;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
