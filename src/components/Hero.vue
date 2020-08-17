@@ -26,7 +26,7 @@
   }
 
   .hero.ready {
-    min-height:99vh;
+    min-height:90vh;
   }
   .hero.ready .animated, .hero.ready {
     opacity:1;

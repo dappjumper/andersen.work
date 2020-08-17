@@ -2,6 +2,7 @@
   <Layout>
     <Hero/>
     <section class="accented md:flex">
+      <div class="wave"></div>
       <div class="centered">
         <h1 class="text-center md:mt-8">Companies I have collaborated with</h1>
         <div><div class="partners md:flex"><div><img src="~/../logos/dapp.png"></div><div><img src="~/../logos/zeux.png"></div><div><img src="~/../logos/arcc.png"></div><div><img src="~/../logos/dexon.png"></div><div><img src="~/../logos/cobinhood.png"></div><div><img src="~/../logos/ethos.png"></div><div><img src="~/../logos/canimo.png"></div><div><img src="~/../logos/nwd.png"></div></div>
@@ -12,6 +13,25 @@
 </template>
 
 <style>
+
+  .wave {
+    height:80px;
+    width:100%;
+    background:url('~../wave.svg');
+    position:absolute;
+    top:0;
+    left:0;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      background-position:0;
+    }
+    100% {
+      background-position:650px;
+    }
+  }
 
   section {
     min-height:100vh;
