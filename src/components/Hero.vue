@@ -4,13 +4,13 @@
       <h1 class="mb-0">Tobias <b>Andersen</b></h1>
       <h2 class="mt-0 mb-16">Full-stack Software Developer</h2>
       <div class="nav">
-        <a href="https://github.com/dappjumper/">
+        <a target="_blank" href="https://github.com/dappjumper/">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/dappjump/">
+        <a target="_blank" href="https://www.linkedin.com/in/dappjump/">
           LinkedIn
         </a>
-        <a href="mailto:tobias@andersen.work">
+        <a target="_blank" href="mailto:tobias@andersen.work">
           tobias@andersen.work
         </a>
       </div>
