@@ -55,6 +55,12 @@
     position:relative;
   }
 
+  @media (max-width: 768px) {
+    .wave {
+      display:none;
+    }
+  }
+
   @media (min-width: 768px) {
     .centered {
       position:absolute;
