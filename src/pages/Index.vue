@@ -1,31 +1,44 @@
 <template>
-  <transition name="pagetransition">
   <Layout>
-    <h1>How to enjoy life with Cold Brew Gray Brew Coffee</h1>
-    <p>
-      Gray Brew's hand-crafted Benguet Arabica concentrate is cold-brewed and bottled fresh, daily. We receive orders on a "first come, first serve" basis and deliver within a day or 2, or on the next batch of fresh brews.
-    </p>
-    <CoffeeForm/>
+    <Hero/>
+    <section>
+      Some content
+    </section>
+    <section>
+      Some other content
+    </section>
   </Layout>
-</transition>
 </template>
+
+<style>
+
+  .star {
+    height:64px;
+    width:64px;
+    background:#333333;
+    position:absolute;
+  }
+
+  body {
+    height:5000px;
+  }
+
+</style>
 
 <script>
 
-import CoffeeForm from './../components/CoffeeForm.vue'
+import Hero from './../components/Hero'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger.js'
+gsap.registerPlugin(ScrollTrigger)
 
 export default {
   components: {
-    CoffeeForm
+    Hero
   },
+  mounted() {},
   metaInfo: {
-    title: 'Gray Brew'
+    title: 'Tobias Andersen'
   }
 }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
