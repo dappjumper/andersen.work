@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" :class="{ready: ready}">
     <div class="content">
       <h1 class="mb-0">Tobias <b>Andersen</b></h1>
       <h2 class="mt-0 mb-16">Full-stack Software Developer</h2>
@@ -20,16 +20,22 @@
 </template>
 
 <style>
-  body {
-    max-height:100vh;
-    overflow:hidden;
+  .hero, .hero .animated {
+    transition:opacity .5s ease, min-height .5s ease;
+    opacity:0;
+  }
+
+  .hero.ready {
+    min-height:99vh;
+  }
+  .hero.ready .animated, .hero.ready {
+    opacity:1;
   }
   .hero {
     text-align:center;
     position:relative;
     width:100%;
-    height:100vh;
-    background: #222222;
+    min-height:100vh;
     color:#fafafa;
   }
   .hero .content {
@@ -64,11 +70,16 @@
   export default {
     name: 'Hero',
     data: () => {
-      return {}
+      return {
+        ready: false
+      }
     },
     filters: {},
     computed: {},
     created () {},
+    mounted () {
+      setTimeout(() => {this.ready = true}, 1)
+    },
     methods: {}
   }
 </script>

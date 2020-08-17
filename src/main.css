@@ -22,8 +22,15 @@ h2 {
   font-size:1.5rem;
 }
 
-section {
-  height:100vh;
+body, section {
   background:#222222;
   color:#fafafa;
+}
+
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
