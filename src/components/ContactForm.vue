@@ -102,7 +102,7 @@
   methods: {
     sendEmail () {
       if(this.sendingEmail == false) {
-        axios.post('https://service-bin.hostman.site/contactOwner', {
+        axios.post('https://service-bin-73a8.hostman.site/emailOwner', {
             email: this.contact.email,
             message: this.contact.message
           })
