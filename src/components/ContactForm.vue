@@ -72,7 +72,7 @@
           <div class="px-8 md:mx-16 mt-12 md:mt-0 pt-6 pb-8 mb-4">
             <h2>Thanks for your message!</h2>
             <p>You will receive an answer shortly on <b>{{contact.email}}</b></p>
-            <p>Now would be a perfect time to <a target="_blank" href="https://www.linkedin.com/in/dappjump/">connect on LinkedIn</a></p>
+            <p>Now would be a perfect time to <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dappjump/">connect on LinkedIn</a></p>
             <p>
               Typo? <a class="cursor-pointer" @click="contactState = 'initial'">Click here</a> to redo
             </p>
