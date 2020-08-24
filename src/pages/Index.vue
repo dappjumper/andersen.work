@@ -11,10 +11,10 @@
           <p class="text-gray-100">
             Currently looking for an exciting start-up with a need for a talented developer.
           </p>
-          <p class="text-gray-100 pt-6">
-            <a class="mr-3 rounded" target="_blank" href="mailto:tobias@andersen.work">Email</a>
-            <a class="mx-3 rounded" target="_blank" href="https://github.com/dappjumper/">GitHub</a>
-            <a class="ml-3 rounded" target="_blank" href="https://www.linkedin.com/in/dappjump/">LinkedIn</a>
+          <p class="text-gray-100 pt-6 links">
+            <a class="sm:mr-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="mailto:tobias@andersen.work">Email</a>
+            <a class="sm:mx-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://github.com/dappjumper/">GitHub</a>
+            <a class="sm:ml-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://www.linkedin.com/in/dappjump/">LinkedIn</a>
           </p>
         </div>
         <ContactForm/>
@@ -25,13 +25,13 @@
 
 <style>
 
-  .hero p a {
+  .links a {
     border:1px solid rgba(255,255,255,0.1);
     padding:0.5rem 1.3rem;
     transition:background .05s;
   }
 
-  .hero p a:hover {
+  .links a:hover {
     background:rgba(255,255,255,0.1);
   }
 
