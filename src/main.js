@@ -7,15 +7,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'
-  })
-
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'
-  })
+  require('typeface-open-sans')
+  require('typeface-roboto-slab')
 
   head.meta.push({
     name: 'Description',
