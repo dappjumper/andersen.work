@@ -12,9 +12,9 @@
             Currently looking for an exciting start-up with a need for a talented developer.
           </p>
           <p class="text-gray-100 pt-6 links">
-            <a class="sm:mr-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="mailto:tobias@andersen.work">Email</a>
-            <a class="sm:mx-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://github.com/dappjumper/">GitHub</a>
-            <a class="sm:ml-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://www.linkedin.com/in/dappjump/">LinkedIn</a>
+            <a rel="noreferrer" class="sm:mr-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="mailto:tobias@andersen.work">Email</a>
+            <a rel="noreferrer" class="sm:mx-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://github.com/dappjumper/">GitHub</a>
+            <a rel="noreferrer" class="sm:ml-3 rounded block w-full sm:inline mb-5 sm:mb-0" target="_blank" href="https://www.linkedin.com/in/dappjump/">LinkedIn</a>
           </p>
         </div>
         <ContactForm/>
