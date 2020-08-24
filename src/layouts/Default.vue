@@ -15,8 +15,6 @@ query {
 
 <script>
 
-import CoolHeader from './../components/CoolHeader'
-
 export default {
   data: () => {
     return {}

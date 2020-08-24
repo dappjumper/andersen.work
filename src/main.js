@@ -17,5 +17,10 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'
   })
 
+  head.meta.push({
+    name: 'Description',
+    content: 'Tobias Andersen, Full-stack Software Developer with 4 years of professional experience as a microservice-oriented full stack developer working with technologies such as JavaScript, APIs/Websockets, and NoSQL. Currently looking for an exciting start-up with a need for a talented developer.'
+  })
+
   Vue.component('Layout', DefaultLayout)
 }

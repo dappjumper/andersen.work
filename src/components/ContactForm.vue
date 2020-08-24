@@ -16,9 +16,9 @@
             <textarea name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="message" type="message" v-model="contact.message" required placeholder="You are the perfect fit! Come work with us."></textarea>
           </div>
           <div class="flex items-center justify-between">
-            <input class="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="send">
+            <input class="cursor-pointer bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="send">
             </input>
-            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="mailto:tobias@andersen.work">
+            <a class="inline-block align-baseline font-bold text-sm text-blue-900 hover:text-blue-800" href="mailto:tobias@andersen.work">
               tobias@andersen.work
             </a>
           </div>

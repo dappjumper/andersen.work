@@ -58,9 +58,6 @@
 <script>
 
 import ContactForm from '~/components/ContactForm'
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger.js'
-gsap.registerPlugin(ScrollTrigger)
 
 export default {
   components: {
