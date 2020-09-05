@@ -76,6 +76,11 @@
   transform:scale(0,1);
 }
 
+.viewbox.first > .container {
+  opacity:1;
+  transform:none;
+}
+
 body {
   background:#111111;
 }
@@ -104,7 +109,6 @@ export default {
     ThreeIllustration
   },
   mounted() {
-    this.addAnim('.first')
     this.addAnim('.second')
     this.addAnim('.third')
     this.addAnim('.fourth')
