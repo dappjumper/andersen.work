@@ -8,7 +8,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   require('typeface-open-sans')
-  require('typeface-roboto-slab')
+  require('typeface-montserrat')
 
   head.meta.push({
     name: 'Description',

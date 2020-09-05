@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1">
-    <form ref="contactForm" @submit.prevent="sendEmail()" method="POST" :class="{nobg: contactState == 'sending'}" class="animform bg-gray-100 shadow-md rounded px-8 md:ml-24 mt-12 md:mt-0 pt-6 pb-8 mb-4">
+    <form ref="contactForm" @submit.prevent="sendEmail()" method="POST" :class="{nobg: contactState == 'sending'}" class="animform bg-gray-100 shadow-md rounded px-8 mt-12 md:mt-0 pt-6 pb-8 mb-4">
         <div class="px-8 md:mx-16 mt-12 md:mt-0 pt-6 pb-8 mb-4" :class="{activeState: contactState == 'initial'}">
           <h2 class="font-thin">Let's get in touch!</h2>
           <div class="mb-4">
@@ -24,7 +24,7 @@
           </div>
         </div>
         <div :class="{activeState: contactState == 'sending'}">
-          <div class="loader bg-gray-00 px-8 md:mx-16 mt-12 md:mt-0 pt-6 pb-8 mb-4">
+          <div class="loader bg-gray-00 px-8 mt-12 md:mt-0 pt-6 pb-8 mb-4">
             <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
                 <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                     <circle cx="22" cy="22" r="6" stroke-opacity="0">
@@ -92,6 +92,7 @@
     box-shadow:none;
   }
   form {
+    color:#333333;
     transition:all .2s;
   }
   form svg {
