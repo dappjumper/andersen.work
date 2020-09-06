@@ -13,7 +13,8 @@ export default {
       scene: null,
       renderer: null,
       mesh: null,
-      container: null
+      container: null,
+      visible: false
     }
   },
   methods: {
@@ -26,12 +27,19 @@ export default {
 
         this.scene = new Three.Scene()
 
-        let geometry = new Three.BoxGeometry(0.2, 0.2, 0.2)
+        let geometry = new Three.SphereGeometry(0.15, 64, 12)
         let wireframe = new Three.WireframeGeometry( geometry )
-        let material = new Three.MeshBasicMaterial( { color: 0xfafafa, wireframe: true } )
-
-        this.mesh = new Three.Mesh(geometry, material)
+        let wireframeMaterial = new Three.MeshBasicMaterial( { color: 0x111111 } )
+        let pointMaterial = new Three.PointsMaterial({
+            color: 0xfafafa,
+            size: 2,
+            morphTargets: true,
+            sizeAttenuation: false
+        });
+        this.mesh = new Three.Mesh(geometry, wireframeMaterial)
+        this.dotMesh = new Three.Points(geometry, pointMaterial)
         this.scene.add(this.mesh)
+        this.scene.add(this.dotMesh)
 
         this.renderer = new Three.WebGLRenderer({antialias: true, alpha: true})
         
@@ -45,6 +53,8 @@ export default {
         requestAnimationFrame(this.animate)
         this.mesh.rotation.x += 0.005
         this.mesh.rotation.z += 0.005
+        this.dotMesh.rotation.x += 0.005
+        this.dotMesh.rotation.z += 0.005
         this.renderer.render(this.scene, this.camera)
     },
     onResize () {
@@ -64,8 +74,7 @@ export default {
   .threeContainer {
     height:300px;
     width:300px;
-    z-index:0;
-    opacity:0.5;
+    z-index:1;
     overflow:visible;
     pointer-events:none;
     margin:0 auto;

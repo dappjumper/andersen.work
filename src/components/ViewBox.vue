@@ -1,16 +1,12 @@
 <template>
-  <section class="viewbox" :style="typeof hidden == 'undefined' ? '' : 'display:none!important;'" :class="{dark: typeof dark !== 'undefined', fullheight: typeof fullheight !== 'undefined'}">
-    <div class="p-4 md:pt-24 md:pb-24 md:flex items-center container m-auto">
+  <section class="viewbox" :style="typeof hidden == 'undefined' ? '' : 'display:none!important;'" :class="{dark: typeof dark !== 'undefined', light: typeof light !== 'undefined', fullheight: typeof fullheight !== 'undefined'}">
+    <div :style="(typeof pb0 == 'undefined' ? '' : 'padding-bottom:0!important;')" class="p-4 md:pt-24 md:pb-24 md:flex items-center container m-auto">
       <slot />
     </div>
   </section>
 </template>
 
 <style scoped>
-  .viewbox:nth-child(2) {
-    flex-direction: column-reverse;
-  }
-
   .viewbox {
     width:100vw;
     box-sizing:border-box;
@@ -23,15 +19,19 @@
   .fullheight > div {
     min-height:100vh;
   }
+
   .dark {
     color:#fafafa;
+  }
+  .light {
+    color:#333333;
   }
 </style>
 
 <script>
   export default {
     name: 'ViewBox',
-    props: ['dark', 'fullheight', 'hidden'],
+    props: ['dark', 'light', 'fullheight', 'hidden','pb0'],
     mounted () {
     },
     data () {

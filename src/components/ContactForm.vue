@@ -2,7 +2,6 @@
   <div class="flex-1">
     <form ref="contactForm" @submit.prevent="sendEmail()" method="POST" :class="{nobg: contactState == 'sending'}" class="animform bg-gray-100 shadow-md rounded px-8 mt-12 md:mt-0 pt-6 pb-8 mb-4">
         <div class="px-8 md:mx-16 mt-12 md:mt-0 pt-6 pb-8 mb-4" :class="{activeState: contactState == 'initial'}">
-          <h2 class="font-thin">Let's get in touch!</h2>
           <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
               Your email*
@@ -90,6 +89,9 @@
     outline:none;
     border:none;
     box-shadow:none;
+  }
+  h2 {
+    color:#333333;
   }
   form {
     color:#333333;
