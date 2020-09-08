@@ -27,7 +27,7 @@ export default {
 
         this.scene = new Three.Scene()
 
-        let geometry = new Three.SphereGeometry(0.15, 64, 12)
+        let geometry = new Three.SphereGeometry(0.173, 64, 12)
         let wireframe = new Three.WireframeGeometry( geometry )
         let wireframeMaterial = new Three.MeshBasicMaterial( { color: 0x111111 } )
         let pointMaterial = new Three.PointsMaterial({

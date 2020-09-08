@@ -1,6 +1,6 @@
 <template>
-  <section class="viewbox" :style="typeof hidden == 'undefined' ? '' : 'display:none!important;'" :class="{dark: typeof dark !== 'undefined', light: typeof light !== 'undefined', fullheight: typeof fullheight !== 'undefined'}">
-    <div :style="(typeof pb0 == 'undefined' ? '' : 'padding-bottom:0!important;')" class="p-4 md:pt-24 md:pb-24 md:flex items-center container m-auto">
+  <section class="viewbox" :style="typeof hidden == 'undefined' ? '' : 'display:none!important;'" :class="{dark: typeof dark !== 'undefined', light: typeof light !== 'undefined', fullheight: typeof fullheight !== 'undefined', dense: typeof dense !== 'undefined'}">
+    <div :style="(typeof pb0 == 'undefined' ? '' : 'padding-bottom:0!important;')" class="p-4 py-12 md:py-24 md:flex items-center container m-auto">
       <slot />
     </div>
   </section>
@@ -27,12 +27,16 @@
   .light {
     color:#333333;
   }
+  .dense > div {
+    padding-top:2rem;
+    padding-bottom:2rem;
+  }
 </style>
 
 <script>
   export default {
     name: 'ViewBox',
-    props: ['dark', 'light', 'fullheight', 'hidden','pb0'],
+    props: ['dark', 'light', 'fullheight', 'hidden','pb0','dense'],
     mounted () {
     },
     data () {
