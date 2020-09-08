@@ -12,6 +12,7 @@
     box-sizing:border-box;
     align-items: center;
     justify-content: center;
+    overflow:hidden;
   }
   .fullheight {
     min-height:100vh;
