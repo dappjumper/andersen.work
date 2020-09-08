@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <ViewBox dark class="first pt-12 pb-12">
+    <ViewBox dark class="first pt-12 pb-0">
       <div class="half">
         <h1 class="mb-2 font-bold">Tobias <span class="font-thin">Andersen</span></h1>
         <h2 class="font-thin mb-12">FULL STACK DEVELOPER</h2>
-        <p class="letter-spacing font-thin text-lesser mb-12">
+        <p class="letter-spacing md:pl-2 font-thin text-lesser mb-12">
           As a full stack developer, I connect the dots between user experiences, development systems, and business goals while closing any gaps that would prevent holistic production flows.
         </p>
         <p>
@@ -28,26 +28,78 @@
       </div>
       <ThreeIllustration />
     </ViewBox>
-    <ViewBox dark class="second accent" id="brief">
+    <ViewBox dark class="second" id="brief">
       <div class="third flex-1 pb-12 md:pb-0 md:px-0 md:pr-12">
         <h2 class="font-thin pb-2">FRONTEND</h2>
-        <p class="font-thin letter-spacing text-lesser">Fostering better UX and load-times using the latest frameworks such as Vue.JS to deliver performant applications/websites.</p>
+        <p class="md:pl-2 font-thin letter-spacing text-lesser">Fostering better UX and load-times using the latest frameworks such as Vue.JS to deliver performant applications/websites.</p>
       </div>
       <div class="third flex-1 pb-12 md:pb-0 md:px-6">
         <h2 class="font-thin pb-2">BACKEND</h2>
-        <p class="font-thin letter-spacing text-lesser">Empowering applications with a framework of APIs/Microservices, Websockets, Smart caching, and databases.</p>
+        <p class="md:pl-2 font-thin letter-spacing text-lesser">Empowering applications with a framework of APIs/Microservices, Websockets, Smart caching, and databases.</p>
       </div>
       <div class="third flex-1 md:px-0 md:pl-12">
         <h2 class="font-thin pb-2">DEVOPS</h2>
-        <p class="font-thin letter-spacing text-lesser">Increasing development and maintenance efficiency using version control, CI/CD, monitoring/logging, and testing.</p>
+        <p class="md:pl-2 font-thin letter-spacing text-lesser">Increasing development and maintenance efficiency using version control, CI/CD, monitoring/logging, and testing.</p>
       </div>
     </ViewBox>
-    <ViewBox hidden dark class="second">
-      <Illustration />
+    <ViewBox hidden dark pb0 class="second">
+      <div class="full">
+        <h1 class="font-thin"><span class="text-accent">FEATURED </span><b>PROJECTS</b></h1>
+      </div>
+    </ViewBox>
+    <ViewBox dark hidden class="second">
+      <div class="half md:pr-24">
+        <h2 class="font-thin pb-2">PROJECT FINCH</h2>
+        <p class="pl-2 font-thin text-lesser letter-spacing">
+          The single most important full-stack project for passive income and hands-on learning is Project Finch.<br/><br/>
+          It has been iterated and upgraded several times as new frameworks, feature requests and interesting technologies were discovered.<br/><br/>
+          It is currently split into two parts; a Quasar (vue.js) application statically rendered and connected to a main REST and Websocket server as to adhere to a scalable micro-service architecture.<br/><br/>This separation of client and server is powerful as it allows several different types of clients and platforms (web, android, ios).
+        </p>
+      </div>
       <div class="half">
-        <h2>FRONT END</h2>
-        <p class="text-lesser letter-spacing">
-          Using [INSERT FRONTEND TOOLS], I foster greater interactions between users and products by building web interfaces with accessibility in mind.
+        <VideoPlayer source="/rendering.mp4" thumbnail="/projectfinch.jpg"/>
+      </div>
+    </ViewBox>
+    <ViewBox dark class="second" pb0>
+      <div class="full">
+        <h1 class="font-thin"><span class="text-accent">EXPERIMENTAL </span><b>PROJECTS</b></h1>
+      </div>
+    </ViewBox>
+    <ViewBox dark pb0 class="second">
+      <div class="half md:pr-24">
+        <h2 class="font-thin pb-2">IN-BROWSER RENDERING</h2>
+        <p class="md:pl-2 font-thin text-lesser letter-spacing">JavaScript experiments using Unity, PixiJS, HTML/CSS and tilt.js to add to my skillset for future projects that require either 2D or 3D rendering.</p>
+        <p class="pl-2 font-thin text-lesser letter-spacing">
+          I am always exploring exciting opportunities for in-browser rendering to add interactivity and motion to elements that would benefit from such.<br/><br/>If you have made it this far, do not forget to mention this the next time <a class="cursor-pointer font-bold" @click="scrollTo('#contact')">we talk.</a><br/><br/>Click the giant play button for a funky glimpse into in-browser rendering.
+        </p>
+      </div>
+      <div class="half">
+        <VideoPlayer source="/rendering.mp4" thumbnail="/rendering.jpg"/>
+      </div>
+    </ViewBox>
+    <ViewBox dark>
+      <div class="third md:pr-12">
+        <p class="pb-4 font-thin text-lesser letter-spacing">
+          <span class="text-accent">DRAW-ON GRID</span>
+          <span class="md:pl-2 md:block">
+            Generate a grid in the DOM (HTML) with JavaScript and toggle colors via click events<br/><br/>Incomplete tools like these are made to push my understanding of a topic, and also to help with oddly-specific transient challenges.<br/><br/>In this case, there was a need for drawing in a grid and keeping it saved without the overhead of software like Excel and Google Sheets.
+          </span>
+        </p>
+      </div>
+      <div class="third md:pr-12">
+        <p class="pb-4 font-thin text-lesser letter-spacing">
+          <span class="text-accent">PIXI CREDIT CARD</span>
+          <span class="md:pl-2 md:block">
+            Plug-and-play compatible Credit Card visualizer with swap-out templates supported.<br/><br/>Its use case is as a component for fintech companies to showcase their various credit cards in a personalized manner.<br/><br/>The generated credit card is download-able since it is a CANVAS element; vanilla-tilt.js was implemented to add a third dimension to the overall presentation.
+          </span>
+        </p>
+      </div>
+      <div class="third md:pr-12">
+        <p class="pb-4 font-thin text-lesser letter-spacing">
+          <span class="text-accent">PIXI CREATURE SIMULATION</span>
+          <span class="md:pl-2 md:block">
+            Experimenting with Object-Oriented JavaScript tied to creature behavior.<br/><br/>Each movement is randomly decided on a per-instance basis and works in cronologically large steps, therefore reducing the "computational resolution"<br/><br/>The smooth movement is achieved by tweening between its current pixel-position and where it should be on the grid.<br/>
+          </span>
         </p>
       </div>
     </ViewBox>
@@ -127,7 +179,7 @@ body {
 }
 
 .accent {
-  background:#111111;
+  background: rgba(200,55,55,0.1);
 }
 
 </style>
@@ -139,6 +191,7 @@ import ViewBox from '~/components/ViewBox'
 import Hero from '~/components/Hero'
 import Illustration from '~/components/Illustration'
 import ThreeIllustration from '~/components/ThreeIllustration'
+import VideoPlayer from '~/components/VideoPlayer'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -152,7 +205,8 @@ export default {
     ViewBox,
     ContactForm,
     Illustration,
-    ThreeIllustration
+    ThreeIllustration,
+    VideoPlayer
   },
   mounted() {
   },
