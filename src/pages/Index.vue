@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <ViewBox dark class="first pb-0 md:py-24" style="background:url(https://image.freepik.com/free-vector/minimalist-night-landscape-with-starry-sky-grass_104785-159.jpg); background-size:cover; background-position:bottom center">
+    <ViewBox dark class="first pb-0 md:py-24" style="">
       <div class="half">
         <h1 class="mb-2 font-bold">Tobias<br/><span class="font-thin">Andersen</span></h1>
         <h2 class="font-thin mb-4">FULL STACK DEVELOPER</h2>
@@ -223,9 +223,8 @@ body {
 }
 
 .accent {
-  margin-top:-5px;
   background: #0B486B;  /* fallback for old browsers */
-  background: linear-gradient(to bottom, black, #111111, #111111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #111111, #222228, #111111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media (max-width:768px) {
