@@ -9,7 +9,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
-    "gsap": "^3.5.1",
+    "gsap": "^3.6.0",
     "tailwindcss": "^1.6.2",
     "three": "^0.120.1",
     "typeface-montserrat": "0.0.75",
